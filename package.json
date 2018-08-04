@@ -1,0 +1,44 @@
+{
+  "name": "nodeblog",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "*",
+    "mongodb": "^2.0.46",
+    "mongoskin": "~2.0.3",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.2.0",
+    "monk": "git+https://github.com/vccabral/monk.git",
+    "connect-flash": "*",
+    "express-validator": "*",
+    "express-session": "*",
+    "express-messages": "*",
+    "multer": "*",
+    "moment": "*"
+  },
+  "author": "Afolayan Isaiah",
+  "description": "This blog is built with Nodejs\r * Install Nodejs\r * Run npm install\r * npm start",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iAfolayan/nodeBlog.git"
+  },
+  "keywords": [
+    "Node",
+    "Blog",
+    "Website"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iAfolayan/nodeBlog/issues"
+  },
+  "homepage": "https://github.com/iAfolayan/nodeBlog#readme"
+}
