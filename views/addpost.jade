@@ -1,0 +1,31 @@
+extends layout
+
+block content
+	h1=title
+	if errors
+		each error, i in errors
+			div.alert.alert-danger #{error.msg}
+	form(method='post', action='/posts/add', enctype='multipart/form-data')
+		.form-group
+			label Title:
+			input.form-control.col-md-6(name='title', type='text', placeholder='Post title')
+		.form-group
+			label Category:
+			select.form-control.col-md-6(name='category')
+				each category, i in categories
+					option(value='#{category.name}') #{category.name}
+		.form-group
+			label Body:
+			textarea.form-control.col-md-6(name='body', id='body')
+		.form-group
+			label Main Image:
+			input.form-control.col-md-6(name='mainImage', type='file')
+		.form-group
+			label Author:
+			select.form-control.col-md-6(name='author')
+				option(value='Afolayan Ibikunle') Afolayan Ibikunle
+				option(value='Ogungbemi Arike') Ogungbemi Arike
+		input.btn.btn-default(name='submit', type='submit', value='Save')
+		script(src='/ckeditor/ckeditor.js')
+		script
+			| CKEDITOR.replace('body');
