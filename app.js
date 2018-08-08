@@ -9,8 +9,7 @@ var upload =  multer({ dest: './public/images'})
 var expressValidator = require('express-validator');
 
 var mongo = require('mongodb');
-//var db = require('monk')('localhost/nodeblog');
-var db = require('monk')('mongodb://root:cplusNANO@1@ds115472.mlab.com:15472/nodeblog');
+var db = require('monk')('localhost/nodeblog');
 
 var indexRouter = require('./routes/index');
 var postsRouter = require('./routes/posts');

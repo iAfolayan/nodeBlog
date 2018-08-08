@@ -3,8 +3,7 @@ var router = express.Router();
 
 // Make databade accessiable
 var mongo = require('mongodb');
-//var db = require('monk')('localhost/nodeblog');
-var db = require('monk')('mongodb://root:cplusNANO@1@ds115472.mlab.com:15472/nodeblog');
+var db = require('monk')('localhost/nodeblog');
 
 router.get('/show/:category', function(req, res, next) {
     var posts = db.get('posts');
