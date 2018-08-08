@@ -35,7 +35,7 @@ app.use(json());
 app.use(urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(static(join(__dirname, 'public')));
-app.get('/cool', (req, res) => res.send(cool()))
+app.get('/cool', (req, res) => res.send(cool()));
 
 // Express Session
 app.use(session({
