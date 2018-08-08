@@ -8,7 +8,6 @@
   "dependencies": {
     "connect-flash": "*",
     "cookie-parser": "~1.4.3",
-    "cool-ascii-faces": "^1.3.4",
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "express-messages": "*",

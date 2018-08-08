@@ -1,4 +1,3 @@
-import cool from 'cool-ascii-faces';
 import createError from 'http-errors';
 import express, { json, urlencoded, static } from 'express';
 import { join } from 'path';
@@ -35,7 +34,6 @@ app.use(json());
 app.use(urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(static(join(__dirname, 'public')));
-app.use('/cool', (req, res) => res.send(cool()));
 
 // Express Session
 app.use(session({
