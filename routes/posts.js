@@ -5,6 +5,10 @@ var upload =  multer({ dest: './public/images/'})
 
 // Make databade accessiable
 var mongo = require('mongodb');
+<<<<<<< HEAD
+=======
+//var db = require('monk')('localhost/nodeblog');
+>>>>>>> 7ffb967797d7735dd4bd7f33b007f7370e6cfd4a
 var db = require('monk')('mongodb://root:cplusNANO@1@ds115472.mlab.com:15472/nodeblog');
 
 router.get('/show/:id', function(req, res, next) {
